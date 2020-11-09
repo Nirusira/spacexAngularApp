@@ -1,0 +1,143 @@
+.container {
+    background: #f2f2f2;
+    padding: 15px;
+    max-width: 1440px;
+    margin: auto;
+}
+.container h1 {
+    margin-top: 0;
+}
+.filter-section {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    float: left;
+}
+.filter-section h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.filter-section .filter-title {
+    padding: 5px;
+    margin: 0 25px 10px;
+    border-bottom: 1px solid #d0d0d0;
+    clear: both;
+}
+.programs-section {
+    width: 100%;
+    position: relative;
+    min-height: 200px;
+    float: left;
+    clear: both;
+}
+.filters-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.filters-list input {
+    display: none;
+}
+.filters-list label {
+    background: #c4df9a;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 20px 10px;
+}
+.filters-list label.is_active {
+    background: #7cb900;
+}
+.filter-option-list > span {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.filter-option-list > span:nth-child(2n) {
+    float: right;
+}
+.program {
+    width: calc(100% - 20px);
+    float: left;
+    margin-bottom: 15px;
+    background: #ffffff;
+    padding: 10px;
+    min-height: 330px;
+}
+.program-image {
+    background: #f2f2f2;
+    margin-bottom: 10px;
+}
+.program-image img {
+    width: 100%;
+}
+.program-loading {
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    float: left;
+    opacity: 0.5;
+    font-size: 20px;
+    z-index: 10;
+    background-color: #ffffff;
+    text-align: center;
+}
+.program-loading span {
+    position: absolute;
+    top: 50%;
+}
+.no-results {
+    top: 50%;
+    position: absolute;
+    width: 100%;
+}
+.text-blue {
+    color: #474d84;
+}
+.text-bold {
+    font-weight: bold;
+}
+.text-center {
+    text-align: center;
+}
+.program-detilas {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.program-detilas ul {
+    list-style: initial;
+}
+@media (min-width: 700px) {
+    .wrapper {
+        display: flex;
+        min-height: calc(100vh - 110px);
+    }
+    .filter-section {
+        width: 30%;
+    }
+    .programs-section {
+        clear: none;
+        width: 60%;
+    }
+    .program {
+        width: calc(50% - 35px);
+        margin-left: 15px;
+    }
+}
+@media (min-width: 1024px) {
+    .filter-section {
+        width: 20%;
+    }
+    .programs-section {
+        width: 80%;
+    }
+    .program {
+        width: calc(25% - 35px);
+    }
+}
